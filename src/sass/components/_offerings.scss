@@ -1,0 +1,47 @@
+.offerings {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:url(../images/mobile/mobile-offerings-bg@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.apple{
+    margin: 41px 20px 60px 20px;
+}
+.specialty{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;    
+    color: #2C2C2C;
+}
+.specialty-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    color: #2C2C2C;
+}
+.usp{
+    @extend %list;
+    margin-bottom: 28px;
+}
+.order-button{
+    width: 106px;
+    height: 40px;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+    background: #FFFFFF;
+    color: #2C2C2C;
+    font-weight: 500;
+    font-size: 13px;
+    margin-right: 24px;
+}
+
+// @media screen and (min-device-pixel-ratio:2) and (max-width:767px),
+// screen and (min-resolution:192dpi) and (max-width:767px),
+// screen and (min-resolution:2dppx) and (max-width:767px){
+//     .offerings{
+//         background-image: url(../src/images/mobile/mobile-offerings-bg@2x.png);
+//     }
+// }
