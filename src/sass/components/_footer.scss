@@ -1,0 +1,28 @@
+.page-footer {
+    background-image: url('/src/images/mobile/mobile-fruit-footer@1x.png');
+}
+
+.nav {
+    display: flex;
+    margin-top: 60px;
+}
+
+.nav__list {
+    @extend %list;
+    margin-left: 81px;
+}
+
+.text-subscribe {
+    margin-top: 40px;
+
+}
+
+
+
+.copy-thumb__list {
+    @extend %list;
+    display: flex;
+}
+
+
+
