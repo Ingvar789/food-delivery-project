@@ -1,0 +1,24 @@
+/*базові стилі*/
+@import './utils/vars';
+@import './utils/placeholders';
+@import './base/body';
+@import './base/common';
+
+/*header*/
+@import './components/header';
+
+/*main*/
+@import './components/hero';
+@import './components/offerings';
+@import './components/favorites';
+@import './components/customers';
+@import './components/subscribe';
+
+/*footer*/
+@import './components/footer';
+
+/*modal*/ 
+@import './components/modal';
+
+/*mobile menu*/
+@import './components/mobile-menu';
