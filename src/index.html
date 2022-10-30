@@ -6,15 +6,31 @@
     <title>FoodSta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./js/modal.js"></script>
-    <script type="module" src="./js/mobile-menu.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.scss" />
+   
   </head>
   <body>
-    <div class="container">test</div>
-    <include src="./partials/offerings.html"></include>
-    <!--Додаємо частини сторінки в порядку зверху до низу по секціях-->
+
+    <include src="./partials/header.html"></include>
+    
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/offerings.html"></include>
+      <include src="./partials/favorites.html"></include>
+      <include src="./partials/customers.html"></include>
+      <include src="./partials/subscribe.html"></include>
+    </main>
+    
+    <include src="./partials/footer.html"></include>
+
+    <!-- Додаткові елементи поза основним контентом -->
+      <include src="./partials/modal.html"></include>
+      <include src="./partials/mobile-menu.html"></include>
+
+      <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
+
   </body>
+
 </html>
