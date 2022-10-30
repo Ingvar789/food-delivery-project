@@ -1,7 +1,7 @@
 .header {
     display: flex;
-    height: 72px;
-    background-color: rgb(153, 163, 108);    
+    height: 72px;   
+    background-color: $secondary-bg-color; 
 }
 
 .header__container {   
