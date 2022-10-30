@@ -9,40 +9,6 @@
     outline: 2px solid crimson;
 }
 
-.header__nav {
-    display: flex;
-    flex-grow: 1;
-}
-
-.header__nav-logo {
-    display: flex;
-    align-items: center;
-}
-
-.header__nav-menu {
-    display: flex;
-    margin-left: auto;
-    margin-right: 30px;    
-}
-
-.header__nav-list {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    padding: 0;    
-}
-
-.header__nav-item {    
-    @extend %list;
-}
-
-.header__nav-text {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: calc(16 / 14);    
-    color: $main-text-color;
-}
-
 .header__button {
     display: flex;
 }
@@ -59,4 +25,9 @@
     background: $accent-green-color;
     border-radius: 30px;
     border: none;
+    
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;     
+    color: $main-text-color;
 }
