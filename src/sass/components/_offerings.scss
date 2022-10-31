@@ -11,15 +11,11 @@
     margin: 41px 20px 60px 20px;
 }
 .specialty{
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.2;    
+    @include font(700, 28px, 33px, 0.06em);
     color: #2C2C2C;
 }
 .specialty-description{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.17;
+    @include font(900, 26px, 42px, 0.06em);
     color: #2C2C2C;
 }
 .usp{
