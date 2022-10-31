@@ -26,14 +26,15 @@
     position: relative;
 }
 
-.nav__text {
+.nav__link {
     text-decoration: none;
     font-size: 14px;
     line-height: calc(16 / 14);
     color: $main-text-color;
 }
 
-.nav__text--active {
+.nav__link:hover,
+.nav__link:focus {
     color: $accent-green-color;
     border-bottom: 1.3px solid $accent-green-color;
 }
