@@ -30,3 +30,8 @@
     line-height: 150%;     
     color: $main-text-color;
 }
+
+.header__button-inside:hover,
+.header__button-inside:focus {
+    background: $accent-modal-green-color;
+}
