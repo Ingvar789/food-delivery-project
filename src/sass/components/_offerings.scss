@@ -1,7 +1,19 @@
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+}
 .offerings {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    // padding-top: 41px;
+    padding-bottom: 60px;
     background-image:url("../images/mobile/mobile-offerings-bg@1x.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -11,27 +23,58 @@
     margin: 41px 20px 60px 20px;
 }
 .specialty{
+    margin-bottom: 28px;
     @include font(700, 28px, 33px, 0.06em);
-    color: #2C2C2C;
+    color: $main-text-color;
 }
 .specialty-description{
-    @include font(900, 26px, 42px, 0.06em);
-    color: #2C2C2C;
+    margin-bottom: 28px;
+    @include font(400, 14px, 16px, 0.06em);
+    color: $main-text-color
+    
 }
 .usp{
     @extend %list;
+}
+.icon-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    background-size: contain;
+}
+.icon{
+    fill: $main-green-color;
+}
+.usp-item{
     margin-bottom: 28px;
+}
+.usp-specify{
+    margin-bottom: 16px;
+    @include font(700, 18px, 21px, 0.06);
 }
 .order-button{
     width: 106px;
     height: 40px;
-    border: 2px solid #7EB101;
+    margin-right: 24px;
+    border: 2px solid $main-green-color;
     border-radius: 30px;
     background: #FFFFFF;
-    color: #2C2C2C;
-    font-weight: 500;
-    font-size: 13px;
-    margin-right: 24px;
+    color: $main-text-color;
+    @include font(500, 13px, 20px, 0.03);
+    cursor: pointer;
+    transition: border-color $timing-function;
+        
+    &:hover{
+       border-color: #597d00;
+    }    
+}
+.offerings-details{
+    
 }
 
 // @media screen and (min-device-pixel-ratio:2) and (max-width:767px),
