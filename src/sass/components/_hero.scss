@@ -1,0 +1,63 @@
+.hero__holder {
+  //   display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 159px;
+    padding-bottom: 0;
+  }
+}
+
+.hero__title {
+  @extend %section-title;
+  color: $main-text-color;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    width: 537px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 502px;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 502px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.button {
+  background: $accent-green-color;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: right;
+  color: $main-text-color;
+  min-width: 98px;
+  min-height: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 18px;
+  cursor: pointer;
+  border: none;
+}
