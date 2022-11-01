@@ -19,6 +19,60 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media screen and (min-device-pixel-ratio:2) and (max-width:767px),
+screen and (min-resolution:192dpi) and (max-width:767px),
+screen and (min-resolution:2dppx) and (max-width:767px) {
+
+    .offerings {
+        background-image: url("../images/mobile/mobile-offerings-bg@2x.png")
+    }
+}
+
+@media screen and (min-device-pixel-ratio:3) and (max-width:767px),
+screen and (min-resolution:288dpi) and (max-width:767px),
+screen and (min-resolution:3dppx) and (max-width:767px) {
+
+    .offerings {
+        background-image: url("../images/mobile/mobile-offerings-bg@3x.png")
+    }
+}
+
+@media screen and (min-device-pixel-ratio:2) and (min-width:768px),
+screen and (min-resolution:192dpi) and (min-width:768px),
+screen and (min-resolution:2dppx) and (min-width:768px) {
+
+    .offerings {
+        background-image: url("../images/tablet/tablet-offerings-bg@2x.png")
+    }
+}
+
+@media screen and (min-device-pixel-ratio:3) and (min-width:768px),
+screen and (min-resolution:288dpi) and (min-width:768px),
+screen and (min-resolution:3dppx) and (min-width:768px) {
+
+    .offerings {
+        background-image: url("../images/tablet/tablet-offerings-bg@3x.png")
+    }
+}
+
+@media screen and (min-device-pixel-ratio:2) and (min-width:1280px),
+screen and (min-resolution:192dpi) and (min-width:1280px),
+screen and (min-resolution:2dppx) and (min-width:1280px) {
+
+    .offerings {
+        background-image: url("../images/desctop/desctop-offerings-bg@2x.png")
+    }
+}
+
+@media screen and (min-device-pixel-ratio:3) and (min-width:1280px),
+screen and (min-resolution:288dpi) and (min-width:1280px),
+screen and (min-resolution:3dppx) and (min-width:1280px) {
+
+    .offerings {
+        background-image: url("../images/desctop/desctop-offerings-bg@3x.png")
+    }
+}
 .apple{
     margin: 41px 20px 60px 20px;
 }
@@ -30,8 +84,7 @@ a {
 .specialty-description{
     margin-bottom: 28px;
     @include font(400, 14px, 16px, 0.06em);
-    color: $main-text-color
-    
+    color: $main-text-color  
 }
 .usp{
     @extend %list;
@@ -98,12 +151,50 @@ a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    
 }
-// @media screen and (min-device-pixel-ratio:2) and (max-width:767px),
-// screen and (min-resolution:192dpi) and (max-width:767px),
-// screen and (min-resolution:2dppx) and (max-width:767px){
-//     .offerings{
-//         background-image: url(../src/images/mobile/mobile-offerings-bg@2x.png);
-//     }
-// }
+
+@media screen and (min-width: 768px)and (max-width: 1279px) {
+    .offerings{
+        padding-bottom: 60px;
+    }
+    .specialty {
+        margin-bottom: 20px;
+        @include font(700, 42px, 49px, 0.06em);
+    }
+    
+    .specialty-description {
+        margin-bottom: 40px;
+        @include font(400, 16px, 19px, 0.06em);
+    }
+    .usp{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 116px;
+    }    
+    .usp-item {
+        margin-bottom: 40px;
+    }
+    .usp-specify {
+        margin-bottom: 16px;
+        @include font(700, 18px, 21px, 0.06);
+    }
+}
+
+//    @media screen and (max-width: 479px) {
+//        padding: 0 20px;
+//    }
+
+//    @media screen and (min-width: 480px) and (max-width: 767px) {
+//        width: 480px;
+//        padding: 0 20px;
+//    }
+
+//    
+
+//    @media screen and (min-width: 1280px) {
+//        width: 1280px;
+//        padding: 0 16px;
+//        ;
+//    }
+   
