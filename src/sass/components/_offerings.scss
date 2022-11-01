@@ -57,6 +57,7 @@ a {
     margin-bottom: 16px;
     @include font(700, 18px, 21px, 0.06);
 }
+
 .order-button{
     width: 106px;
     height: 40px;
@@ -71,9 +72,34 @@ a {
         
     &:hover{
        border-color: #597d00;
-    }    
+    } 
+}
+.read-button {
+    background-color: transparent;
+    border-color: transparent;
+    transition: fill $timing-function;
+    
+       &:hover .read-details-icon{
+       fill: #597d00;
+    }
+}
+.read-details{
+    position:relative;
+    @include font(400, 14px, 20px, 0.03);
+    color: $nav-text-color;
+    transition: color $timing-function;
 
+        &:hover{
+        color: #597d00;    
+        }
+}
 
+.read-details-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
 // @media screen and (min-device-pixel-ratio:2) and (max-width:767px),
 // screen and (min-resolution:192dpi) and (max-width:767px),
 // screen and (min-resolution:2dppx) and (max-width:767px){

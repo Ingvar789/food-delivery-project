@@ -2,18 +2,26 @@
     <div class="container">
         <div class="apple">
             <picture>
-                <source srcset="./images/desctop/desctop-apple@1x.png 1x, ./images/desctop/desctop-apple@2x.png 2x ./images/desctop/desctop-apple@3x.png 3x"
-                media="(min-width:1280px)"
-                type="image/png">
+                <source 
+                    srcset="./images/desctop/desctop-apple@1x.png 1x, 
+                    ./images/desctop/desctop-apple@2x.png 2x 
+                    ./images/desctop/desctop-apple@3x.png 3x"
+                    media="(min-width:1280px)"
+                    type="image/png">
                 
                 <source
-                    srcset="./images/tablet/tablet-apple@1x.png 1x, ./images/tablet/tablet-apple@2x.png 2x ./images/tablet/tablet-apple@3x.png 3x"
+                    srcset="./images/tablet/tablet-apple@1x.png 1x, 
+                    ./images/tablet/tablet-apple@2x.png 2x 
+                    ./images/tablet/tablet-apple@3x.png 3x"
                     media="(min-width:768px)" 
                     type="image/png">
                 
                 <source
-                    srcset="./images/mobile/mobile-apple@1x.png 1x, ./images/mobile/mobile-apple@2x.png 2x ./images/mobile/mobile-apple@3x.png 3x"
-                    media="(min-width:480px)" type="image/png">
+                    srcset="./images/mobile/mobile-apple@1x.png 1x, 
+                    ./images/mobile/mobile-apple@2x.png 2x 
+                    ./images/mobile/mobile-apple@3x.png 3x"
+                    media="(min-width:480px)" 
+                    type="image/png">
 
                 <img src="./images/mobile/mobile-apple@1x.png" alt="apple">
             </picture>
@@ -44,11 +52,14 @@
 
             </li>
         </ul>
-        <button class="order-button" type="button" class="modal-button" data-modal-open>Order Now</button>
-        <a class="offerings-details"target="_blank" href="#">Read more
-            <svg width="29" height="16">
-                <use href=''></use>
-            </svg>
-        </a>
+        <button class="order-button" type="button" data-modal-open>Order Now</button>
+        <button class="read-button" type="button">
+            <a class="read-details" target="_blank" href="#">Read more
+                <svg class="read-details-icon" width="29" height="16">
+                    <use href='./images/svg/sprite.svg#icon-right'></use>
+                </svg>
+            </a>
+        </button>
+        
     </div>
 </section>
