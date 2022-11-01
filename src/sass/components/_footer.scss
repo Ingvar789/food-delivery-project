@@ -4,7 +4,6 @@
 
     @media screen and (max-width: 480px) {
         max-width: 480px;
-        max-height: 619px;
         background-image: url('/src/images/mobile/mobile-fruit-footer@1x.png');
         background-size: cover;
 
@@ -56,28 +55,25 @@
                 background-image: url('/src/images/desctop/desctop-fruit-futer@3x.png');
             }
     }
-
-
 }
 
 .container-footer {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .nav-thumb {
     display: flex;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1279px) {
         flex-wrap: wrap;
     }
 }
-
-// .nav-footer {
-//     @media screen and (max-width:767px) {
-//         justify-content: space-between;
-//     }
-// }
 
 .nav-footer__logo {
     @media screen and (max-width: 767px) {
@@ -86,6 +82,7 @@
 }
 
 .nav-footer__list {
+    @extend %list;
     @media screen and (max-width: 767px) {
             display: flex;
             flex-direction: column;
@@ -93,6 +90,15 @@
             gap: 20px;
             margin-left: 81px;
         }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-left: 101px;
+    }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 148px;
+        }
+    
 }
 
 .form {
@@ -107,18 +113,41 @@
 .sign-up-form {
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        
+    }
 }
 
 .sign-up-input-footer {
-    margin-top: 12px;
     background-color: #FFFFFF;
     border: 0.854167px solid $main-yellow-color;
+
+    &::placeholder {
+        font-size: 12px;
+    }
+
+    &:hover,
+    &:focus {
+        outline: 2px solid $main-yellow-color;
+    }
+
+    &:not(:placeholder-shown):required:valid {
+        border: 0.854167px solid $main-green-color; 
+    }
+    
+    &:not(:placeholder-shown):required:invalid {
+        border: 0.854167px solid #FF705D;
+    }
 }
 
 .sign-up-button-footer {
     background-color: #FFFFFF;
     border: 0.854167px solid $main-green-color;
     border-radius: 30px;
+    font-size: 13px;
 
     &:hover,
     &:focus {
@@ -130,25 +159,60 @@
         margin-top: 20px;
         margin-left: auto;
     }
+
+    @media screen and (min-width:768px) {
+        margin-left: 12px;
+    }
 }
 
 .form__text {
     margin-top: 20px;
     font-size: 10px;
     line-height: 1.2;
+
+    @media screen and (min-width:768px) {
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
 .form__text-policy {
     color: $main-green-color;
 }
 
+.other-thumb {
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+}
+
 .other-thumb__list {
     @extend %list;
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
     font-size: 10px;
     line-height: 1.2;
+
+    @media screen and (max-width:767px) {
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}
+
+.other-thumb__item {
+    @media screen and (min-width:768px) {
+        
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
 }
 
 .other-thumb__link {
@@ -156,9 +220,16 @@
 }
 
 .copy {
-    margin-top: 20px;
     text-align: center;
     font-size: 10px;
     line-height: 1.2;
     
+    @media screen and (max-width:767px) {
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
