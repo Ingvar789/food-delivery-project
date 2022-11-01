@@ -1,3 +1,11 @@
+.favorites-list {
+  @extend %list;
+}
+
+.favorites-item {
+  margin-bottom: 30px;
+}
+
 .favorites-image {
   padding: 24px;
   background-color: #fefefe;
