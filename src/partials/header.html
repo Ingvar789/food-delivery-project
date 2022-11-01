@@ -6,7 +6,7 @@
           <use href="./images/svg/sprite.svg#icon-logo"></use>
         </svg>
       </a>
-      <div class="nav__menu">
+      <div class="nav__menu display-none-mob">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#part-header">Header</a>
@@ -29,8 +29,20 @@
         </ul>
       </div>
     </nav>
-    <div class="header__button">
+    <div class="header__button display-none-mob">
       <button class="header__button-inside" type="button">Order Now</button>
+    </div>
+    <div class="burger display-none-menu">
+      <button
+        class="burger__button js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="burger__button-icon" width="28" height="28">
+          <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
