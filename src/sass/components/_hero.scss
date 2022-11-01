@@ -1,63 +1,191 @@
-.hero__holder {
-  //   display: flex;
+.hero {
+}
+
+.hero-container {
+  display: flex;
+  position: relative;
+  overflow: inherit;
+}
+
+.hero__thumb {
+  display: flex;
   flex-direction: column;
-  gap: 28px;
   position: relative;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+  gap: 28px;
+
+  @media screen and (min-width: 768px) {
+    gap: 0;
+  }
 
   @media screen and (min-width: 1280px) {
     padding-top: 159px;
     padding-bottom: 0;
+    gap: 28px;
   }
 }
 
 .hero__title {
-  @extend %section-title;
-  color: $main-text-color;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  color: var(--title-color);
 
   @media screen and (min-width: 768px) {
     width: 537px;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 44px;
   }
-
   @media screen and (min-width: 1280px) {
     width: 502px;
     font-size: 48px;
     line-height: 1.2;
+    margin-bottom: 0;
   }
 }
 
 .hero__text {
+  padding-right: 14px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: $main-text-color;
+  color: var(--title-color);
 
   @media screen and (min-width: 768px) {
     width: 336px;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 1280px) {
     width: 502px;
-    font-size: 16px;
-    line-height: 1.5;
   }
 }
 
-.button {
-  background: $accent-green-color;
-  border-radius: 30px;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
-  text-align: right;
-  color: $main-text-color;
-  min-width: 98px;
-  min-height: 32px;
+.dish-thumb {
+  position: absolute;
+  right: 40px;
+  top: 149px;
+
+  @media screen and (min-width: 1280px) {
+    top: 14px;
+    right: 30px;
+  }
+}
+.dish {
+  display: none;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 320px;
+    height: 320px;
+    border: 14px solid $main-yellow-color;
+    position: relative;
+    z-index: 5;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+    border: 26px solid $main-yellow-color;
+  }
+}
+
+.mySwiper {
+  border-radius: 50%;
+}
+
+.dish .swiper {
+  position: static;
+}
+
+.btn__slider {
+  min-width: 34px;
+  height: 28px;
+
+  @media screen and (min-width: 1280px) {
+    min-width: 48px;
+    height: 40px;
+  }
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 18px;
-  cursor: pointer;
+  padding: 0;
+  margin: 0;
   border: none;
+  cursor: pointer;
+  background-color: $secondary-bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.slider__icon {
+  fill: currentColor;
+  width: 11.49px;
+  height: 20.34px;
+
+  @media screen and (min-width: 1280px) {
+    width: 16.42px;
+    height: 29.05px;
+  }
+}
+
+.swiper-button-prev:after {
+  position: absolute;
+  display: none;
+}
+
+.swiper-button-next:after {
+  display: none;
+}
+
+.dish .swiper-button-prev {
+  width: 34px;
+  height: 28px;
+  background-color: $secondary-bg-color;
+  color: $main-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  left: -25px;
+  transition: transform $timing-function, color $timing-function,
+    box-shadow $timing-function;
+
+  &:hover {
+    color: $main-green-color;
+    transform: scale(1.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+    left: -40px;
+  }
+}
+.dish .swiper-button-next {
+  width: 34px;
+  height: 28px;
+  background-color: $secondary-bg-color;
+  color: $main-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  right: -25px;
+  transition: transform $timing-function, color $timing-function,
+    box-shadow $timing-function;
+
+  &:hover {
+    color: $main-green-color;
+    transform: scale(1.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+    right: -40px;
+  }
 }

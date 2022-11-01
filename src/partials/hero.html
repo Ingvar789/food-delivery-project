@@ -1,35 +1,101 @@
 <section class="hero">
-  <div class="container hero__holder">
-    <h1 class="hero__title">Enjoy Your Favorite From Anywhere</h1>
-    <p class="hero__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-    </p>
-    <button type="button" class="button">Order Now</button>
-  </div>
-  <div class="swiper">
-    <div class="swiper__ellipse">
-      <div class="swiper__wrapper">
-        <div class="swiper__item">slider1</div>
-
-        <div class="swiper__item">slider2</div>
-        <div class="swiper__item">slider3</div>
+  <div class="container hero-container">
+    <div class="hero__thumb">
+      <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <button class="header__button-inside">Order Now</button>
+    </div>
+    <div class="dish-thumb">
+      <div class="dish">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/desctop-hero-dish1@1x.png 1x,
+                    ./images/desctop/desctop-hero-dish1@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-hero-dish1@1x.png 1x,
+                    ./images/tablet/tablet-hero-dish1@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="command__img"
+                  src="./images/desctop/desctop-hero-dish1@1x.png"
+                  alt="dish1"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/desctop-hero-dish2@1x.png 1x,
+                    ./images/desctop/desctop-hero-dish2@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-hero-dish2@1x.png 1x,
+                    ./images/tablet/tablet-hero-dish2@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="command__img"
+                  src="./images/desctop/desctop-hero-dish2@1x.png"
+                  alt="dish1"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/desctop-hero-dish3@1x.png 1x,
+                    ./images/desctop/desctop-hero-dish3@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-hero-dish3@1x.png 1x,
+                    ./images/tablet/tablet-hero-dish3@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="command__img"
+                  src="./images/desctop/desctop-hero-dish3@1x.png"
+                  alt="dish1"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="slider__icon">
+              <use href="./images/svg/sprite.svg#icon-right"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-prev">
+            <svg class="slider__icon">
+              <use href="./images/svg/sprite.svg#icon-left"></use>
+            </svg>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
-    </div>
-    <div>
-      <button class="button__next">
-        <svg width="16.4" height="29">
-          <use href=""></use>
-        </svg>
-      </button>
-    </div>
-    <div>
-      <button class="button__prev">
-        <svg width="16.4" height="29">
-          <use href=""></use>
-        </svg>
-      </button>
     </div>
   </div>
 </section>
