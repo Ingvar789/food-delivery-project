@@ -73,6 +73,10 @@
     @media screen and (max-width:1279px) {
         flex-wrap: wrap;
     }
+
+    @media screen and (min-width:1280px) {
+        justify-content: space-between;
+    }
 }
 
 .nav-footer__logo {
@@ -129,11 +133,6 @@
         font-size: 12px;
     }
 
-    &:hover,
-    &:focus {
-        outline: 2px solid $main-yellow-color;
-    }
-
     &:not(:placeholder-shown):required:valid {
         border: 0.854167px solid $main-green-color; 
     }
@@ -144,6 +143,7 @@
 }
 
 .sign-up-button-footer {
+    padding: 11px 22px;
     background-color: #FFFFFF;
     border: 0.854167px solid $main-green-color;
     border-radius: 30px;
@@ -191,6 +191,7 @@
 
 .other-thumb__list {
     @extend %list;
+    text-decoration: underline;
     display: flex;
     justify-content: space-between;
     font-size: 10px;
