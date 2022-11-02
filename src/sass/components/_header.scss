@@ -5,11 +5,39 @@
 }
 
 .header__container {   
-    display: flex;        
+    display: flex; 
+    align-items: center;   
+    justify-content: space-between;    
+}
+// кнопка бургера
+
+.burger__button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.burger__button-icon {
+    fill: $main-green-color;
+}
+.nav-and-button {
+    display: none;
+    @media screen and (min-width: 768px) {
+            display: flex;
+        }
+}
+.nav {
+    display: flex;
 }
 
 .header__button {
     display: flex;
+    margin-left: 30px;
 }
 
 .header__button-inside {
@@ -34,5 +62,6 @@
 .header__button-inside:hover,
 .header__button-inside:focus {
     background: $accent-modal-green-color;
+    cursor: pointer;
 }
 
