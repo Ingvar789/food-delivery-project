@@ -73,6 +73,10 @@
     @media screen and (max-width:1279px) {
         flex-wrap: wrap;
     }
+
+    @media screen and (min-width:1280px) {
+        justify-content: space-between;
+    }
 }
 
 .nav-footer__logo {
@@ -187,6 +191,7 @@
 
 .other-thumb__list {
     @extend %list;
+    text-decoration: underline;
     display: flex;
     justify-content: space-between;
     font-size: 10px;
