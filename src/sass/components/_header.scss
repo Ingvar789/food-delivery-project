@@ -22,7 +22,9 @@
         display: none;
     }
 }
-.burger__button:focus
+.burger__button:focus {
+    color: $main-yellow-color;
+}
 .burger__button-icon {
     fill: currentColor;
 }
