@@ -1,5 +1,5 @@
 (() => {
-  const showOnPx = 72;
+  const showOnPx = 70;
   const backToTopButton = document.querySelector('.back-to-top');
 
   const scrollContainer = () => {
