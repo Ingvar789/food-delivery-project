@@ -20,18 +20,16 @@ a {
     background-size: cover;
 
     @media screen and (min-device-pixel-ratio:2) and (max-width:767px),
-        screen and (min-resolution:192dpi) and (max-width:767px),
-        screen and (min-resolution:2dppx) and (max-width:767px) {
-    
-                background-image: url("../images/mobile/mobile-offerings-bg@2x.png");
-         
+    screen and (min-resolution:192dpi) and (max-width:767px),
+    screen and (min-resolution:2dppx) and (max-width:767px) {
+        background-image: url("../images/mobile/mobile-offerings-bg@2x.png");     
         }
     
-        @media screen and (min-device-pixel-ratio:3) and (max-width:767px),
-        screen and (min-resolution:288dpi) and (max-width:767px),
-        screen and (min-resolution:3dppx) and (max-width:767px) {
+    @media screen and (min-device-pixel-ratio:3) and (max-width:767px),
+    screen and (min-resolution:288dpi) and (max-width:767px),
+    screen and (min-resolution:3dppx) and (max-width:767px) {
 
-                background-image: url("../images/mobile/mobile-offerings-bg@3x.png");
+        background-image: url("../images/mobile/mobile-offerings-bg@3x.png");
         }
 }
 
@@ -40,6 +38,7 @@ a {
     margin-right: auto;
     margin-bottom: 60px;
 }
+
 .specialty{
     margin-bottom: 28px;
     @include font(700, 28px, 33px, 0.06em);
@@ -93,24 +92,27 @@ a {
        border-color: #597d00;
     } 
 }
-.read-button {
-    background-color: transparent;
-    border-color: transparent;
-    transition: fill $timing-function;
+// .read-button {
+//     background-color: transparent;
+//     border-color: transparent;
+//     transition: fill $timing-function;
     
-       &:hover .read-details-icon{
-       fill: #597d00;
-    }
-}
+//        &:hover .read-link-icon{
+//        fill: #597d00;
+//     }
+// }
 .read-link{
     position:relative;
     @include font(400, 14px, 20px, 0.03);
     color: $nav-text-color;
-    transition: color $timing-function;
+    transition: color $timing-function, fill $timing-function;
 
         &:hover{
         color: #597d00;    
         }
+        &:hover .read-link-icon {
+        fill: #597d00;
+    }
 }
 
 .read-link-icon{
@@ -128,20 +130,20 @@ a {
         background-image: url("../images/tablet/tablet-offerings-bg@1x.png");    
         
         @media screen and (min-device-pixel-ratio:2) and (min-width:768px),
-            screen and (min-resolution:192dpi) and (min-width:768px),
-            screen and (min-resolution:2dppx) and (min-width:768px) {
+        screen and (min-resolution:192dpi) and (min-width:768px),
+        screen and (min-resolution:2dppx) and (min-width:768px) {
         
-                    background-image: url("../images/tablet/tablet-offerings-bg@2x.png");
+        background-image: url("../images/tablet/tablet-offerings-bg@2x.png");
         
-            }
+        }
         
-            @media screen and (min-device-pixel-ratio:3) and (min-width:768px),
-            screen and (min-resolution:288dpi) and (min-width:768px),
-            screen and (min-resolution:3dppx) and (min-width:768px) {
+        @media screen and (min-device-pixel-ratio:3) and (min-width:768px),
+        screen and (min-resolution:288dpi) and (min-width:768px),
+        screen and (min-resolution:3dppx) and (min-width:768px) {
+           
+        background-image: url("../images/tablet/tablet-offerings-bg@3x.png");
              
-                background-image: url("../images/tablet/tablet-offerings-bg@3x.png");
-             
-            }
+        }
     }
     .specialty-thumb{
         width: 526px;
@@ -171,21 +173,24 @@ a {
     }
     .order-button{
         cursor: pointer;
+        &:focus {
+        border-color: #597d00;
+        }
     }
     .read-link {
         &:focus {
             color: #597d00;
         }
     }
-    .read-button {
-        &:focus .read-details-icon {
+    .read-link {
+        &:focus .read-link-icon {
             fill: #597d00;
         }
 }
 }
 
 @media screen and (min-width: 1280px) {
-    .read-button{
+    .read-link{
         display: none;
     }
     .offerings {
@@ -196,15 +201,15 @@ a {
         background-image: url("../images/desctop/desctop-offerings-bg@1x.png");
 
         @media screen and (min-device-pixel-ratio:2) and (min-width:1280px),
-            screen and (min-resolution:192dpi) and (min-width:1280px),
-            screen and (min-resolution:2dppx) and (min-width:1280px) {
+        screen and (min-resolution:192dpi) and (min-width:1280px),
+        screen and (min-resolution:2dppx) and (min-width:1280px) {
         
-                background-image: url("../images/desctop/desctop-offerings-bg@2x.png");        }
+        background-image: url("../images/desctop/desctop-offerings-bg@2x.png");        }
         @media screen and (min-device-pixel-ratio:3) and (min-width:1280px),
-            screen and (min-resolution:288dpi) and (min-width:1280px),
-            screen and (min-resolution:3dppx) and (min-width:1280px) {
+        screen and (min-resolution:288dpi) and (min-width:1280px),
+        screen and (min-resolution:3dppx) and (min-width:1280px) {
         
-                background-image: url("../images/desctop/desctop-offerings-bg@3x.png");
+        background-image: url("../images/desctop/desctop-offerings-bg@3x.png");
                 }
     }
     .desktop-flex{
@@ -214,7 +219,6 @@ a {
     }
     .apple {
         margin-right: 90px;
-     
     }
     .desktop-text{
         width: 573px;
@@ -233,7 +237,6 @@ a {
         margin-bottom: 32px;
         @include font(400, 14px, 19px, 0.06em);
     }
- 
 }
 
 
