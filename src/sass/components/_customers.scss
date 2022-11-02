@@ -1,19 +1,59 @@
  .customers-conteiner {
 margin: auto;
+padding-top: 60px;
+padding-bottom: 60px;
+
+@media screen and (min-width: 767px){
+padding-top: 96px;
+padding-bottom: 84px;
+}
+@media screen and (min-width: 1279px){
+padding-top: 100px;
+padding-bottom: 200px;
+padding-left: 16px;
+padding-right: 123px;
+}
  }
 .customers {
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    max-width: 1280px;
-     background-image: url(../images/mobile/mobile-customers-bg@1x.png),
-                       url(../images/mobile/mobile-customers-bg@2x.png);
+     
+    background-image: url(../images/mobile/mobile-customers-bg@1x.png),
+                       url(../images/mobile/mobile-customers-bg@2x.png),
+                       url(../images/mobile/mobile-customers-bg@3x.png);
     background-repeat: no-repeat;
-    width: 100%;
-    background-size: contain;
-    margin: auto;
+     max-width: 100%;
+     background-size: contain;
+     margin: auto;
+     max-width: 479px;
+     background-position: center;
+
+        @media screen and (min-width: 480px) {
+            background-image: url(../images/mobile/mobile-customers-bg@1x.png),
+                    url(../images/mobile/mobile-customers-bg@2x.png),
+                    url(../images/mobile/mobile-customers-bg@3x.png);
+                background-repeat: no-repeat;
+                max-width: 100%;
+                background-size: contain;
+                margin: auto;
 }
+
+         @media screen and (min-width: 768px){
+        background-image: url(../images/tablet/tablet-customers-bg@1x.png),
+        url(../images/tablet/tablet-customers-bg@2x.png),
+        url(../images/tablet/tablet-customers-bg@3x.png);
+         max-width: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+    }
+     @media screen and (min-width: 1280px){
+    background-image:  url(../images/desctop/desctop-customers-bg@1x.png),
+                       url(../images/desctop/desctop-customers-bg@2x.png),
+                      url(../images/desctop/desctop-customers-bg@3x.png);
+     max-width: 100%;
+     background-size: contain;
+    background-repeat: no-repeat;
+          }
+ }
 
 .customers-title{
     margin: 0px;
@@ -22,9 +62,14 @@ margin: auto;
     font-weight: 700;
     font-size: 28px;
     line-height: 1,17;
-    width: 280px;
+     width: 280px;
     margin-bottom: 20px;
-    
+     @media screen and (min-width: 479px){
+        font-size: 42px;
+         width: 501px;
+         margin-right: 0px;
+     }
+        
 }
 .customers-last-title {
 margin: 0px;
@@ -33,13 +78,26 @@ font-family: roboto, Regular;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.14px;
-width: 280px;
+ width: 280px;
+ @media screen and (min-width: 767px){
+     font-size: 16px;
+     width: 395px;
+ }
 
 }
 .customers-box {
     margin-right: 0px;
     padding-left: 0px;
     margin-top: 32px;
+     @media screen and (min-width: 767px){
+        display: flex;
+        gap: 32px;
+        margin-top: 32px;
+        margin-bottom: 0px;
+     }
+        @media screen and (min-width: 1280px){
+             gap: 139px;
+         }
 
 }
 .box {
@@ -52,11 +110,27 @@ width: 280px;
     width: 280px;
     height: 247px;
     margin-bottom: 24px;
-    margin-top: 28px;
-
-    &:last-child {
-        margin-bottom: 0px;
+    margin-top: 28px; 
+    max-width: 100%;
+    @media screen and (max-width: 479px){
+        margin-bottom: 24px;
     }
+     @media screen and (min-width: 768px){
+        width: 336px;
+        height: 244px;
+        padding: 12px;
+         margin-bottom: 0px;
+        margin-top: 0px;
+   }
+  @media screen and (min-width: 1280px){
+     width: 501px;
+     height: 227px;
+     padding: 14px;
+  }
+
+     &:last-child {
+         margin-bottom: 0px;
+     }
 
 }
 
@@ -68,7 +142,7 @@ width: 280px;
     
 }
 .stars {
-    margin-right: 8px;
+    margin-right: 4px;
     margin-bottom: 28px;
     &:last-of-type {
         margin-right: 0px;
@@ -85,6 +159,14 @@ width: 280px;
     line-height: 1.18;
      width: 264px;
      margin-bottom: 40px;
+     width: 100%;
+
+    @media screen and (min-width: 768px){
+        width: 312px;
+    }
+   @media screen and (min-width: 1280px){
+    width: 473px;
+   }
     
 
 }
