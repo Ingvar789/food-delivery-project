@@ -44,6 +44,9 @@ a {
     @include font(700, 28px, 33px, 0.06em);
     color: $main-text-color;
 }
+.specialty-thumb {
+    width: 280px;
+}
 .specialty-description{
     margin-bottom: 28px;
     @include font(400, 14px, 16px, 0.03em);
@@ -221,6 +224,10 @@ a {
         margin-right: 90px;
     }
     .desktop-text{
+        width: 573px;
+    }
+
+    .specialty-thumb {
         width: 573px;
     }
     .specialty-description {
