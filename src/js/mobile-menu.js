@@ -22,4 +22,7 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     }
   );
+
+  // close menu when scroll down or push anchor//
+   
 })();
