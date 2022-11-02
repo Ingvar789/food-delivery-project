@@ -1,32 +1,69 @@
 <section class="offerings">
-  <div class="container">
-    <h2 class="" id="part-offerings">What’s Special About Our Offerings</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-    </p>
-    <ul>
-      <li>
-        <svg class="" width="48" height="48"></svg>
-        <h3 class="">Fasest Delivery</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros.
-        </p>
-      </li>
-      <li>
-        <svg class="" width="48" height="48"></svg>
-        <h3 class="">Easy to order</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros.
-        </p>
-      </li>
-    </ul>
-    <button type="button" class="modal-button" data-modal-open>
-      Order Now
-    </button>
-    <a target="_blank" href="#">Read more</a>
-  </div>
+    <div class="container">
+        <div class="desktop-flex">
+        <div class="apple">
+            <picture>
+                <source 
+                    srcset="./images/desctop/desctop-apple@1x.png 1x, 
+                    ./images/desctop/desctop-apple@2x.png 2x, 
+                    ./images/desctop/desctop-apple@3x.png 3x"
+                    media="(min-width:1280px)"
+                    type="image/png">
+                
+                <source
+                    srcset="./images/tablet/tablet-apple@1x.png 1x, 
+                    ./images/tablet/tablet-apple@2x.png 2x, 
+                    ./images/tablet/tablet-apple@3x.png 3x"
+                    media="(min-width:768px)" 
+                    type="image/png">
+                
+                <source
+                    srcset="./images/mobile/mobile-apple@1x.png 1x, 
+                    ./images/mobile/mobile-apple@2x.png 2x, 
+                    ./images/mobile/mobile-apple@3x.png 3x"
+                    media="(min-width:480px)" 
+                    type="image/png">
+
+                <img src="./images/mobile/mobile-apple@1x.png" alt="apple">
+            </picture>
+        </div>
+        <div class="desktop-text">
+            <div class="specialty-thumb">
+                <h2 class="specialty">What’s Special About Our Offerings</h2>
+                <p class="specialty-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.   Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            </div>
+        <ul class="usp">
+            <li class="usp-item">
+                <div class="icon-bg">
+                    <svg class="icon" width="32" height="32">
+                    <use href='./images/svg/sprite.svg#icon-delivery'></use>
+                    </svg>
+                </div>
+                
+                <h3 class="usp-label">Fastest Delivery</h3>
+                <p class="usp-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                
+            </li>
+            <li class="usp-item">
+                <div class="icon-bg">
+                <svg class="icon" width="32" height="32">
+                    <use href='./images/svg/sprite.svg#icon-order'></use>
+                </svg>
+                </div>
+                <h3 class="usp-specify">Easy to order</h3>
+                <p class="usp-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+
+            </li>
+        </ul>
+        <button class="order-button" type="button" data-modal-open>Order Now</button>
+        
+        
+        <a class="read-link" href="#" target="_blank">Read more
+            <svg class="read-link-icon" width="29" height="16">
+            <use href='./images/svg/sprite.svg#icon-right'></use>
+            </svg>        
+        </a>
+        </div>
+        </div>
+    </div>
 </section>

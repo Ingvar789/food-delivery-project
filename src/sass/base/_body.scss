@@ -7,11 +7,9 @@ body {
     background-color: $main-bg-color;
     color: $main-text-color;
 }
-
 body.modal-open {
     overflow: hidden;
 }
-
 img {
     display: block;
     max-width: 100%;

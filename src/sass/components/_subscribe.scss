@@ -1,18 +1,32 @@
 .subscribe-container{
    
-    @media screen and (min-width:1200px)  {
+    @media screen and (min-width:1280px)  {
         display: flex;
         align-items: center;
-       flex-direction: row-reverse;
-       width: 100%;       
-        }  
+        flex-direction: row-reverse;
+        width: 100%;
+        
+        padding-bottom: 100px;
+        } 
+      @media screen and (min-width:768px) {
+        padding-bottom: 100px;
+        
+      }
+        @media screen and (max-width:767px) {
+            margin-bottom: 60px;
+            
+        } 
 }
 
 .banana{
+    
     @media screen and (min-width:768px) {
             display: flex;
             flex-direction: row-reverse;
             padding-bottom: 20px;  
+            margin-top: -74px;
+
+            
         }
 }
 
@@ -23,7 +37,7 @@
     border: 0.854167px solid $main-yellow-color;
     border-radius: 30px;
     width: 279px;
-    height: 42px;  
+      
     &::placeholder{
         font-size: 12px;
     }
@@ -46,13 +60,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-            
+  
         margin-top: 31px;
+        margin-left: 175px;
         border-radius: 30px;
         width: 103px;
         height: 42px;
         border: solid 1px $accent-green-color;
         background-color:#F5F5F5;
+        cursor: pointer;
         &:hover,
         &:focus,
         &:active
@@ -60,14 +76,16 @@
         background-color: rgba(187, 243, 48, 1);
         }
  @media screen and (min-width:767px) {
-     margin: 0px;
+     margin-top: 0px;
      margin-left: 21px;
+     
 
  }
 
 }
 .sign-up-title{
     margin-top: 40px;
+    
     @media screen and (min-width:767px) {
         display: flex;     
 }

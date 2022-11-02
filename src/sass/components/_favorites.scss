@@ -1,9 +1,29 @@
+.favorites-title{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  
+
+
+}
+.favorites-text{
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+
 .favorites-list {
   @extend %list;
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .favorites-item {
   margin-bottom: 30px;
+  
 }
 
 .favorites-image {
@@ -17,6 +37,7 @@
 .favorites-image:hover,
 .favorites-image:focus {
   border: 16px solid #bbf330;
+  cursor: pointer;
 }
 
 .favorites-image:active {
