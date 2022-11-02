@@ -1,12 +1,19 @@
 <header class="header">
   <div class="header__container container" id="part-header">
-    <nav class="nav">
       <a class="nav__logo" href="./index.html">
         <svg class="" width="66" height="52">
           <use href="./images/svg/sprite.svg#icon-logo"></use>
         </svg>
       </a>
-      <div class="nav__menu display-none-mob">
+
+        <button class="burger__button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="burger__button-icon" width="28" height="28">
+            <use href="./images/svg/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+      <div class="nav-and-button">
+      <nav class="nav display-none-mob">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#part-header">Header</a>
@@ -27,22 +34,10 @@
             <a class="nav__link" href="#part-subscribe">Subscribe</a>
           </li>
         </ul>
-      </div>
     </nav>
     <div class="header__button display-none-mob">
-      <button class="header__button-inside" type="button">Order Now</button>
+      <button class="header__button-inside" type="button" data-modal-open>Order Now</button>
     </div>
-    <div class="burger display-none-menu">
-      <button
-        class="burger__button js-open-menu"
-        type="button"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="burger__button-icon" width="28" height="28">
-          <use href="./images/svg/sprite.svg#icon-burger"></use>
-        </svg>
-      </button>
     </div>
   </div>
 </header>
