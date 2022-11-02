@@ -30,7 +30,7 @@
 
     &:hover,
     &:focus{
-        outline: 2px solid $main-yellow-color;
+        outline: none;
     }
 
     &:not(:placeholder-shown):required:valid{

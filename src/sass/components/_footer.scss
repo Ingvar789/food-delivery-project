@@ -129,11 +129,6 @@
         font-size: 12px;
     }
 
-    &:hover,
-    &:focus {
-        outline: 2px solid $main-yellow-color;
-    }
-
     &:not(:placeholder-shown):required:valid {
         border: 0.854167px solid $main-green-color; 
     }
@@ -144,6 +139,7 @@
 }
 
 .sign-up-button-footer {
+    padding: 11px 22px;
     background-color: #FFFFFF;
     border: 0.854167px solid $main-green-color;
     border-radius: 30px;
