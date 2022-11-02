@@ -1,13 +1,3 @@
-h1,
-h2,
-h3,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-a {
-    text-decoration: none;
-}
 .offerings {
     width: 100%;
     margin-left: auto;
@@ -34,9 +24,9 @@ a {
 }
 
 .apple{
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
     margin-bottom: 60px;
+    justify-content: center;
 }
 
 .specialty{
@@ -122,6 +112,7 @@ a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    
 }
 
 @media screen and (min-width: 768px) {
