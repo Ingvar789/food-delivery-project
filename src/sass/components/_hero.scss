@@ -1,6 +1,3 @@
-.hero {
-}
-
 .hero-container {
   display: flex;
   position: relative;
@@ -17,6 +14,7 @@
 
   @media screen and (min-width: 768px) {
     gap: 0;
+    padding-bottom: 73px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -30,7 +28,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: calc(33 / 28);
-  color: var(--title-color);
+  color: $main-text-color;
 
   @media screen and (min-width: 768px) {
     width: 537px;
@@ -51,7 +49,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: var(--title-color);
+  color: $main-text-color;
 
   @media screen and (min-width: 768px) {
     width: 336px;
