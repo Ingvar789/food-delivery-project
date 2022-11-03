@@ -1,0 +1,30 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 900;
+    border: none;
+    opacity: 1;
+    transform: translate(0) scale(1) rotate(0);
+
+    transition: opacity 400ms $timing-function, transform 400ms $timing-function;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        cursor: pointer;
+    }
+
+    &.hidden {
+        opacity: 0;
+        transform: translate(200px, 200px) scale(5) rotate(720deg);
+        transition: opacity 400ms $timing-function, transform 400ms $timing-function;
+        pointer-events: none;
+    }
+
+    &__icon {
+        fill: $main-green-color;
+    }
+}

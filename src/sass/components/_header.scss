@@ -14,6 +14,7 @@
 .burger__button {
     border: none;
     padding: 0;
+    color: $main-green-color;
     background-color: transparent;
     cursor: pointer;
 
@@ -21,9 +22,11 @@
         display: none;
     }
 }
-
+.burger__button:focus {
+    color: $main-yellow-color;
+}
 .burger__button-icon {
-    fill: $main-green-color;
+    fill: currentColor;
 }
 .nav-and-button {
     display: none;
