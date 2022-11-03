@@ -110,7 +110,16 @@
 
   &:focus {
     outline: none;
+    border: 1px solid #FF705D;
   }
+
+    &:not(:placeholder-shown):required:valid {
+      border: 1px solid $main-green-color;
+    }
+  
+    &:not(:placeholder-shown):required:invalid {
+      border: 1px solid #FF705D;
+    }
 }
 
 .modalform__btn {
