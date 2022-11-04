@@ -1,4 +1,5 @@
 .page-footer {
+    max-width: 1600px;
     margin: 0 auto;
     background-color: $secondary-bg-color;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
@@ -24,7 +25,9 @@
     @media screen and (min-width: 481px)and (max-width: 768px) {
         max-width: 768px;
         background-image: url('/src/images/tablet/tablet-fruit-footer@1x.png');
-        background-size: cover;
+        background-size: 785px 506px;
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
 
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -40,9 +43,10 @@
     }
 
     @media screen and (min-width: 769px) {
-        max-width: 1600px;
         background-image: url('/src/images/desctop/desctop-fruit-futer@1x.png');
-        background-size: cover;
+        background-size: 1211px 266px;
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
         
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -127,28 +131,15 @@
 }
 
 .sign-up-input-footer {
+    @extend %input;
     background-color: #FFFFFF;
-    border: 0.854167px solid $main-yellow-color;
-
-    &::placeholder {
-        font-size: 12px;
-    }
-
-    &:not(:placeholder-shown):required:valid {
-        border: 0.854167px solid $main-green-color; 
-    }
-    
-    &:not(:placeholder-shown):required:invalid {
-        border: 0.854167px solid #FF705D;
-    }
 }
 
 .sign-up-button-footer {
-    padding: 11px 22px;
+    @extend %button;
+
     background-color: #FFFFFF;
     border: 0.854167px solid $main-green-color;
-    border-radius: 30px;
-    font-size: 13px;
 
     &:hover,
     &:focus {
