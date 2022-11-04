@@ -34,9 +34,7 @@
     @include font(700, 28px, 33px, 0.06em);
     color: $main-text-color;
 }
-// .specialty-thumb {
-//     width: 280px;
-// }
+
 .specialty-description{
     margin-bottom: 28px;
     @include font(400, 14px, 16px, 0.03em);
@@ -132,9 +130,7 @@
              
         }
     }
-    // .specialty-thumb{
-    //     width: 526px;
-    // }
+
     .specialty {
         margin-bottom: 20px;
         @include font(700, 42px, 49px, 0.06em);
@@ -184,7 +180,6 @@
         max-width: 1280px;
         padding-top: 177px;
         padding-bottom: 43px;
-        // margin-top: -161px;
         
         background-image: url("../images/desctop/desctop-offerings-bg@1x.png");
 

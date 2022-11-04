@@ -1,5 +1,16 @@
+.subscribe {
+    background-color: transparent;
+    margin-top: -45px;
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        margin-top: -74px;
+        }
+    @media screen and (min-width:1279px) {
+        margin-top: -60px;
+    }
+}
 .subscribe-container{
-   
+   background-color: transparent;
+   justify-content: space-between;
     @media screen and (min-width:1280px)  {
         display: flex;
         align-items: center;
@@ -18,75 +29,96 @@
         } 
 }
 
-.banana{
-    
+.banana {
+    display: flex;
+    @media screen and (max-width:767px) {
+        margin-bottom: 17px;
+        justify-content: center;
+    }
+         @media screen and (min-width:768px) and (max-width:1279px) {
+             margin-bottom: 20px;
+         }
     @media screen and (min-width:768px) {
             display: flex;
-            flex-direction: row-reverse;
-            padding-bottom: 20px;  
-            margin-top: -74px;
-
-            
+            flex-direction: row-reverse; 
         }
 }
 
+.subscribe__text-container {
+    @media screen and (min-width:1279px) {
+            max-width: 656px;
+        }
+}
 
-.sign-up-input{
+.subscribe__title {
+    @extend %section-title;
+    margin-bottom: 20px;
+    @media screen and (max-width:767px) {
+            font-size: 28px;
+        }
+}
+.subscribe__description {
+    font-size: 14px;
+    line-height: 1.2;
+    @media screen and (min-width:768px) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+}
+.sign-up-title {
+    margin-top: 40px;
+    
+    @media screen and (min-width:768px) {
+        display: flex;     
+    }
+}
+
+.sign-up-input {
     background-color: #F5F5F5;
     padding: 12px;
     border: 0.854167px solid $main-yellow-color;
     border-radius: 30px;
     width: 279px;
-      
-    &::placeholder{
+
+    &::placeholder {
         font-size: 12px;
     }
 
     &:hover,
-    &:focus{
+    &:focus {
         outline: none;
     }
 
-    &:not(:placeholder-shown):required:valid{
-        border: 0.854167px solid  #7EB101;
+    &:not(:placeholder-shown):required:valid {
+        border: 0.854167px solid #7EB101;
     }
-    &:not(:placeholder-shown):required:invalid{
-        border: 0.854167px solid #FF705D; 
+
+    &:not(:placeholder-shown):required:invalid {
+        border: 0.854167px solid #FF705D;
     }
 }
+.sign-up-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
- 
-.sign-up-button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-  
-        margin-top: 31px;
-        margin-left: 175px;
-        border-radius: 30px;
-        width: 103px;
-        height: 42px;
-        border: solid 1px $accent-green-color;
-        background-color:#F5F5F5;
-        cursor: pointer;
-        &:hover,
-        &:focus,
-        &:active
-      {
+    margin-top: 20px;
+    margin-left: 175px;
+    border-radius: 30px;
+    width: 103px;
+    height: 42px;
+    border: solid 1px $accent-green-color;
+    background-color: #F5F5F5;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
         background-color: rgba(187, 243, 48, 1);
-        }
- @media screen and (min-width:767px) {
-     margin-top: 0px;
-     margin-left: 21px;
-     
+    }
 
- }
-
-}
-.sign-up-title{
-    margin-top: 40px;
-    
-    @media screen and (min-width:767px) {
-        display: flex;     
-}
+    @media screen and (min-width:768px) {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
 }
