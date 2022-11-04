@@ -16,46 +16,74 @@ padding-right: 123px;
  }
 .customers {
      
-    background-image: url(../images/mobile/mobile-customers-bg@1x.png),
-                       url(../images/mobile/mobile-customers-bg@2x.png),
-                       url(../images/mobile/mobile-customers-bg@3x.png);
+    background-image: url(../images/mobile/mobile-customers-bg@1x.png);
+    background-size: cover;
     background-repeat: no-repeat;
-     max-width: 100%;
-     background-size: cover;
-     margin: auto;
-     max-width: 479px;
-     background-position: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    
 
-        @media screen and (min-width: 480px) {
-            background-image: url(../images/mobile/mobile-customers-bg@1x.png),
-                    url(../images/mobile/mobile-customers-bg@2x.png),
-                    url(../images/mobile/mobile-customers-bg@3x.png);
-                background-repeat: no-repeat;
-                max-width: 100%;
-                background-size: contain;
-                margin: auto;
-}
+     @media screen and (min-device-pixel-ratio:2) and (max-width:767px),
+         screen and (min-resolution:192dpi) and (max-width:767px),
+         screen and (min-resolution:2dppx) and (max-width:767px) {
+         background-image: url(../images/mobile/mobile-customers-bg@2x.png)}
 
-         @media screen and (min-width: 768px){
-        background-image: url(../images/tablet/tablet-customers-bg@1x.png),
-        url(../images/tablet/tablet-customers-bg@2x.png),
-        url(../images/tablet/tablet-customers-bg@3x.png);
-         max-width: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-    }
+     @media screen and (min-device-pixel-ratio:3) and (max-width:767px),
+     screen and (min-resolution:288dpi) and (max-width:767px),
+     screen and (min-resolution:3dppx) and (max-width:767px){
+     background-image: url(../images/mobile/mobile-customers-bg@3x.png)}
+    
+     }
+
+     @media screen and (min-width: 768px){
+        .customers {
+         width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+        background-image: url(../images/tablet/tablet-customers-bg@1x.png);
+
+        @media screen and (min-device-pixel-ratio:2) and (min-width:768px),
+        screen and (min-resolution:192dpi) and (min-width:768px),
+        screen and (min-resolution:2dppx) and (min-width:768px) {
+        background-image: url(../images/tablet/tablet-customers-bg@2x.png) }
+
+         @media screen and (min-device-pixel-ratio:3) and (min-width:768px),
+         screen and (min-resolution:288dpi) and (min-width:768px),
+         screen and (min-resolution:3dppx) and (min-width:768px){
+         background-image: url(../images/tablet/tablet-customers-bg@3x.png);
+         }
+        }    
+     }
+
      @media screen and (min-width: 1280px){
-    background-image:  url(../images/desctop/desctop-customers-bg@1x.png),
-                       url(../images/desctop/desctop-customers-bg@2x.png),
-                      url(../images/desctop/desctop-customers-bg@3x.png);
-     max-width: 100%;
-     background-size: contain;
+    .customers {
+     width: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
-          }
- }
+    margin-left: auto;
+    margin-right: auto;  
+    background-position: center;
+    background-image:  url(../images/desctop/desctop-customers-bg@1x.png);
 
-.customers-title{
+
+    @media screen and (min-device-pixel-ratio:2) and (min-width:1280px),
+        screen and (min-resolution:192dpi) and (min-width:1280px),
+        screen and (min-resolution:2dppx) and (min-width:1280px){
+        background-image:  url(../images/desctop/desctop-customers-bg@2x.png)}
+
+     @media screen and (min-device-pixel-ratio:3) and (min-width:1280px),
+     screen and (min-resolution:288dpi) and (min-width:1280px),
+    screen and (min-resolution:3dppx) and (min-width:1280px){
+     background-image:  url(../images/desctop/desctop-customers-bg@3x.png);}
+     }        
+     }
+
+.customers-title {
     margin: 0px;
     margin-right: 0px;
     font-family: roboto, bold;
@@ -190,7 +218,7 @@ line-height: 1.5;
 .svg-box {
 display: block;
 display: flex;
- margin-top: 40px;
+margin-top: 40px;
 
 }
  .box-name{
