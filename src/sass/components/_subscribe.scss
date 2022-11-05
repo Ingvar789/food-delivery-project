@@ -4,7 +4,7 @@
     @media screen and (min-width:768px) and (max-width:1279px) {
         margin-top: -74px;
         }
-    @media screen and (min-width:1279px) {
+    @media screen and (min-width:1280px) {
         margin-top: -60px;
     }
 }
@@ -74,47 +74,22 @@
 }
 
 .sign-up-input {
+    @extend %input;
     background-color: #F5F5F5;
-    padding: 12px;
-    border: 0.854167px solid $main-yellow-color;
-    border-radius: 30px;
-    width: 279px;
-
-    &::placeholder {
-        font-size: 12px;
-    }
-
-    &:hover,
-    &:focus {
-        outline: none;
-    }
-
-    &:not(:placeholder-shown):required:valid {
-        border: 0.854167px solid #7EB101;
-    }
-
-    &:not(:placeholder-shown):required:invalid {
-        border: 0.854167px solid #FF705D;
-    }
 }
+
 .sign-up-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %button;
 
     margin-top: 20px;
     margin-left: 175px;
-    border-radius: 30px;
-    width: 103px;
-    height: 42px;
-    border: solid 1px $accent-green-color;
-    background-color: #F5F5F5;
-    cursor: pointer;
+    background-color: $accent-green-color;
+    border-color: transparent;
 
     &:hover,
     &:focus,
     &:active {
-        background-color: rgba(187, 243, 48, 1);
+        background-color: $accent-modal-green-color;
     }
 
     @media screen and (min-width:768px) {
