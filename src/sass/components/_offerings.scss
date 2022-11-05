@@ -31,13 +31,13 @@
 
 .specialty{
     margin-bottom: 28px;
-    @include font(700, 28px, 33px, 0.06em);
+    @include font(700, 28px, 33px);
     color: $main-text-color;
 }
 
 .specialty-description{
     margin-bottom: 28px;
-    @include font(400, 14px, 16px, 0.03em);
+    @include font(400, 14px, 16px);
     color: $main-text-color  
 }
 .usp{
@@ -60,11 +60,11 @@
 
 .usp-label{
     margin-bottom: 16px;
-    @include font(700, 18px, 21px, 0.06);
+    @include font(700, 18px, 21px);
 }
 .usp-description{
     margin-bottom: 28px;
-    @include font(400, 14px, 16px, 0.03);
+    @include font(400, 14px, 16px);
 }
 
 .order-button{
@@ -75,9 +75,9 @@
     border-radius: 30px;
     background: #FFFFFF;
     color: $main-text-color;
-    @include font(500, 13px, 20px, 0.03);
+    @include font(500, 13px, 20px);
     cursor: pointer;
-    transition: border-color $timing-function;
+    transition: border-color 250ms $timing-function;
         
     &:hover{
        border-color: #597d00;
@@ -86,7 +86,7 @@
 
 .read-link{
     position:relative;
-    @include font(400, 14px, 20px, 0.03);
+    @include font(400, 14px, 20px);
     color: $nav-text-color;
     transition: color $timing-function, fill $timing-function;
 
@@ -133,12 +133,12 @@
 
     .specialty {
         margin-bottom: 20px;
-        @include font(700, 42px, 49px, 0.06em);
+        @include font(700, 42px, 49px);
     }
     
     .specialty-description {
         margin-bottom: 40px;
-        @include font(400, 16px, 19px, 0.06em);
+        @include font(400, 16px, 19px);
     }
     .usp{
         display: flex;
@@ -149,7 +149,7 @@
     
     .usp-label {
         margin-bottom: 16px;
-        @include font(700, 18px, 21px, 0.06);
+        @include font(700, 18px, 21px);
     }
     .usp-description{
         margin-bottom: 40px;
@@ -212,7 +212,7 @@
     }
     .specialty-description {
         width: 500px;
-        @include font(400, 16px, 24px, 0.06em);
+        @include font(400, 16px, 24px);
     }
     .usp{
         display: flex;
@@ -222,6 +222,6 @@
     }
     .usp-description{
         margin-bottom: 32px;
-        @include font(400, 14px, 19px, 0.06em);
+        @include font(400, 14px, 19px);
     }
 }
