@@ -33,7 +33,7 @@
      }
 
     @media screen and (min-width: 1280px) {
-        max-width: 1600px;
+        // max-width: 1600px;
         margin: 0 auto;
          background-image: url(../images/desctop/desctop-customers-bg@1x.png);
 
@@ -104,21 +104,20 @@ line-height: 1.14;
 
 }
 .box {
-    margin: 0 auto 24px auto;
     @extend %list;
     border: 1px solid transparent;
     border-radius: 0px 20px 20px 20px;
     background-color: $main-bg-color ;
     padding: 8px;
     max-width: 100%;
-    @media screen and (max-width: 479px){
+    @media screen and (max-width: 767px){
         margin-bottom: 24px;
     }
      @media screen and (min-width: 768px){
         width: 336px;
         height: 244px;
         padding: 12px;
-         margin-bottom: 0px;
+        margin-bottom: 0px;
         margin-top: 0px;
    }
   @media screen and (min-width: 1280px){
