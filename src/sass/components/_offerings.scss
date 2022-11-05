@@ -76,7 +76,7 @@
     color: $main-text-color;
     @include font(500, 13px, 20px);
     cursor: pointer;
-    transition: border-color $timing-function;
+    transition: border-color 250ms $timing-function;
         
     &:hover{
        border-color: #597d00;
