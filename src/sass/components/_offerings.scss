@@ -1,5 +1,4 @@
 .offerings {
-    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 41px;
@@ -31,13 +30,13 @@
 
 .specialty{
     margin-bottom: 28px;
-    @include font(700, 28px, 33px, 0.06em);
+    @include font(700, 28px, 33px);
     color: $main-text-color;
 }
 
 .specialty-description{
     margin-bottom: 28px;
-    @include font(400, 14px, 16px, 0.03em);
+    @include font(400, 14px, 16px);
     color: $main-text-color  
 }
 .usp{
@@ -60,11 +59,11 @@
 
 .usp-label{
     margin-bottom: 16px;
-    @include font(700, 18px, 21px, 0.06);
+    @include font(700, 18px, 21px);
 }
 .usp-description{
     margin-bottom: 28px;
-    @include font(400, 14px, 16px, 0.03);
+    @include font(400, 14px, 16px);
 }
 
 .order-button{
@@ -75,7 +74,7 @@
     border-radius: 30px;
     background: #FFFFFF;
     color: $main-text-color;
-    @include font(500, 13px, 20px, 0.03);
+    @include font(500, 13px, 20px);
     cursor: pointer;
     transition: border-color $timing-function;
         
@@ -86,7 +85,7 @@
 
 .read-link{
     position:relative;
-    @include font(400, 14px, 20px, 0.03);
+    @include font(400, 14px, 20px);
     color: $nav-text-color;
     transition: color $timing-function, fill $timing-function;
 
@@ -108,9 +107,8 @@
 @media screen and (min-width: 768px) {
     // and (max-width: 1279px)
     .offerings{
-        max-width: 768px;
         padding-top: 150px;
-        padding-bottom: 60px;
+        padding-bottom: 100px;
         margin-top: -108px;
         background-image: url("../images/tablet/tablet-offerings-bg@1x.png");    
         
@@ -133,12 +131,14 @@
 
     .specialty {
         margin-bottom: 20px;
-        @include font(700, 42px, 49px, 0.06em);
+        @include font(700, 42px, 49px);
     }
     
     .specialty-description {
+        width: 500px;
+        text-align: justify;
         margin-bottom: 40px;
-        @include font(400, 16px, 19px, 0.06em);
+        @include font(400, 16px, 19px);
     }
     .usp{
         display: flex;
@@ -149,7 +149,7 @@
     
     .usp-label {
         margin-bottom: 16px;
-        @include font(700, 18px, 21px, 0.06);
+        @include font(700, 18px, 21px);
     }
     .usp-description{
         margin-bottom: 40px;
@@ -177,7 +177,7 @@
         display: none;
     }
     .offerings {
-        max-width: 1280px;
+        // max-width: 1280px;
         padding-top: 177px;
         padding-bottom: 43px;
         
@@ -212,7 +212,7 @@
     }
     .specialty-description {
         width: 500px;
-        @include font(400, 16px, 24px, 0.06em);
+        @include font(400, 16px, 24px);
     }
     .usp{
         display: flex;
@@ -222,6 +222,6 @@
     }
     .usp-description{
         margin-bottom: 32px;
-        @include font(400, 14px, 19px, 0.06em);
+        @include font(400, 14px, 19px);
     }
 }
