@@ -209,7 +209,9 @@
         margin-right: 51px;
     }
 
- 
+    .specialty {
+        @include font(700, 42px, 50px);
+                }
     .specialty-description {
         // width: 500px;
         @include font(400, 16px, 24px);
@@ -220,6 +222,10 @@
         align-items: center;
         gap: 67px;
     }
+    .usp-label {
+        margin-bottom: 16px;
+        @include font(700, 18px, 25px);
+        }
     .usp-description{
         width: 253px;
         margin-bottom: 32px;
