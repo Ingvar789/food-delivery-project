@@ -9,6 +9,10 @@
   }
 }
 .favorites-title{
+  @extend %section-title;
+  @media screen and (max-width:767px) {
+      font-size: 28px;
+    }
   text-align: center;
   margin-bottom: 20px;
 }
