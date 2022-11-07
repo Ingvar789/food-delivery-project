@@ -16,7 +16,12 @@
                     </svg>
                     <span class="modalform__invalid-message">The name must be between 3 and 25 characters</span>
                 </span>
-
+                <span class="modalform__required-wrap">
+                    <svg class="modalform__invalid-icon" width="12" height="12">
+                        <use href="./images/svg/sprite.svg#icon-invalid"></use>
+                    </svg>
+                    <span class="modalform__reqiured-message">This field is required</span>
+                </span>
             </label>
             <label class="modalform__field">
                 <span class="modalform__field-desc">Phone number</span>
@@ -28,7 +33,12 @@
                     </svg>
                     <span class="modalform__invalid-message">This phone must be in the format 099 000 00 00</span>
                 </span>
-
+                <span class="modalform__required-wrap">
+                    <svg class="modalform__invalid-icon" width="12" height="12">
+                        <use href="./images/svg/sprite.svg#icon-invalid"></use>
+                    </svg>
+                    <span class="modalform__reqiured-message">This field is required</span>
+                </span>
             </label>
             <label class="modalform__field">
                 <span class="modalform__field-desc">E-mail</span>
@@ -40,10 +50,19 @@
                     </svg>
                     <span class="modalform__invalid-message">Please enter a valid email address</span>
                 </span>
-
+                <span class="modalform__required-wrap">
+                    <svg class="modalform__invalid-icon" width="12" height="12">
+                        <use href="./images/svg/sprite.svg#icon-invalid"></use>
+                    </svg>
+                    <span class="modalform__reqiured-message">This field is required</span>
+                </span>
             </label>
 
-            <button type="submit" class="modalform__btn">Send</button>
+            <button type="submit" class="modalform__btn">Send
+                <svg class="modalform__reqiured-icon" width="165" height="54">
+                    <use href="./images/svg/sprite.svg#icon-required"></use>
+                </svg>
+            </button>
         </form>
     </div>
 </div>

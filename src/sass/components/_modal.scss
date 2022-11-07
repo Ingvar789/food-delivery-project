@@ -161,9 +161,32 @@
   }
 }
 
+.modalform__required-wrap {
+  position: absolute;
+  top: 72px;
+  left: 12px;
+  align-items: baseline;
+  display: none;
 
+  .modalform__input:focus:required ~ & {
+    display: flex;
+  }
+
+  .modalform__input:not(:placeholder-shown):invalid ~ &,
+  .modalform__input:not(:placeholder-shown):valid ~ & {
+    display: none;
+  }
+}
+
+.modalform__reqiured-message {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #ff705d;
+}
 
 .modalform__btn {
+  position: relative;
   margin-top: 32px;
   align-self: center;
   justify-self: center;
@@ -189,4 +212,12 @@
     background-color: #fff;
     border: 2px solid #ff705d;
   }
+}
+
+.modalform__reqiured-icon {
+  position: absolute;
+  top: -54px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
 }
