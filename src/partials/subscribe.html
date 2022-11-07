@@ -20,12 +20,18 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                 in eros elementum tristique.
             </p>
-            <div class="sign-up-title">
+            <form class="sign-up-title">
                 <input class="sign-up-input" type="email" name="email" placeholder="Enter your email" required />
+                <span class="subscribe__invalid-wrap">
+                    <svg class="modalform__invalid-icon" width="12" height="12">
+                        <use href="./images/svg/sprite.svg#icon-invalid"></use>
+                    </svg>
+                    <span class="subscribe__invalid-message">Not a valid email address (example@email.com)</span>
+                </span>
                 <button class="sign-up-button" type="submit">
                     Subscribe
                 </button>
-            </div>
+            </form>
         </div>
     </div>
 </section>

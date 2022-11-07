@@ -1,5 +1,8 @@
  .customers {
     @media screen and  (max-width:767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
      background-image: url(../images/mobile/mobile-customers-bg@1x.png);
     
      @media screen and (min-device-pixel-ratio:2),
@@ -16,7 +19,9 @@
         }
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-     
+        padding-top: 60px;
+        padding-bottom: 120px;
+
          background-image: url(../images/tablet/tablet-customers-bg@1x.png);
 
          @media screen and (min-device-pixel-ratio:2),
@@ -33,7 +38,8 @@
      }
 
     @media screen and (min-width: 1280px) {
-        // max-width: 1600px;
+        padding-top: 100px;
+        padding-bottom: 200px;
         margin: 0 auto;
          background-image: url(../images/desctop/desctop-customers-bg@1x.png);
 
@@ -57,22 +63,6 @@
           
  }
 
- .customers-container {
-    @media screen and (max-width: 767px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        padding-top: 60px;
-        padding-bottom: 120px;
-    }
-    @media screen and (min-width: 1280px) {
-        padding-top: 100px;
-        padding-bottom: 200px;
-    }
-
- }
-
 .customers-title {
     @extend %section-title;
     margin-bottom: 20px;
@@ -93,6 +83,7 @@ line-height: 1.14;
 }
 .customers-box {
     @extend %list;
+   
     @media screen and (min-width: 768px) and (max-width: 1279px){
         display: flex;
         gap: 32px;
@@ -100,6 +91,7 @@ line-height: 1.14;
     @media screen and (min-width: 1280px){
         display: flex;
         gap: 139px;
+        padding-right: 107px;
     }
 
 }
@@ -114,34 +106,31 @@ line-height: 1.14;
         margin-bottom: 24px;
     }
      @media screen and (min-width: 768px){
-        width: 336px;
-        height: 244px;
+        min-width: 336px;
+        // height: 244px;
         padding: 12px;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        margin: 0;
    }
   @media screen and (min-width: 1280px){
-     width: 501px;
-     height: 227px;
+     min-width: 501px;
+    //  height: 227px;
      padding: 14px;
+     margin: 0;
   }
 
      &:last-child {
          margin-bottom: 0px;
      }
-
 }
 
-.stars-item {
+.stars-list {
     display: flex;
     @extend %list;
-    padding-left: 0px;
-    margin-right: 0px;
+    margin-bottom: 28px;
     
 }
 .stars {
     margin-right: 4px;
-    margin-bottom: 28px;
     &:last-of-type {
         margin-right: 0px;
     }
@@ -158,16 +147,8 @@ line-height: 1.14;
      width: 264px;
      margin-bottom: 40px;
      width: 100%;
-
-    @media screen and (min-width: 768px){
-        width: 312px;
-    }
-   @media screen and (min-width: 1280px){
-    width: 473px;
-   }
-    
-
 }
+
 .customers-name {
     margin: 0px;
     font-family: roboto, medium;
@@ -188,8 +169,6 @@ line-height: 1.5;
 .customer__image {
 display: block;
 display: flex;
-margin-top: 40px;
-
 }
  .box-name{
     margin: 0px;

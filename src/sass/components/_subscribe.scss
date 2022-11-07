@@ -1,99 +1,110 @@
 .subscribe {
-    background-color: transparent;
-    margin-top: -45px;
-    @media screen and (min-width:768px) and (max-width:1279px) {
-        margin-top: -74px;
-        }
-    @media screen and (min-width:1280px) {
-        margin-top: -60px;
-    }
+  background-color: transparent;
+  margin-top: -45px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: -74px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -60px;
+    padding-bottom: 64px;
+  }
 }
-.subscribe-container{
-   background-color: transparent;
-   justify-content: space-between;
-    @media screen and (min-width:1280px)  {
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        width: 100%;
-        
-        padding-bottom: 100px;
-        } 
-      @media screen and (min-width:768px) {
-        padding-bottom: 100px;
-        
-      }
-        @media screen and (max-width:767px) {
-            margin-bottom: 60px;
-            
-        } 
+.subscribe-container {
+  background-color: transparent;
+  justify-content: space-between;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
 }
 
 .banana {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 17px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
-    @media screen and (max-width:767px) {
-        margin-bottom: 17px;
-        justify-content: center;
-    }
-         @media screen and (min-width:768px) and (max-width:1279px) {
-             margin-bottom: 20px;
-         }
-    @media screen and (min-width:768px) {
-            display: flex;
-            flex-direction: row-reverse; 
-        }
+    flex-direction: row-reverse;
+  }
 }
 
 .subscribe__text-container {
-    @media screen and (min-width:1279px) {
-            max-width: 656px;
-        }
+  @media screen and (min-width: 1279px) {
+    max-width: 656px;
+  }
 }
 
 .subscribe__title {
-    @extend %section-title;
-    margin-bottom: 20px;
-    @media screen and (max-width:767px) {
-            font-size: 28px;
-        }
+  @extend %section-title;
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+  }
 }
 .subscribe__description {
-    font-size: 14px;
-    line-height: 1.2;
-    @media screen and (min-width:768px) {
-            font-size: 16px;
-            line-height: 1.5;
-        }
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
 }
 .sign-up-title {
-    margin-top: 40px;
-    
-    @media screen and (min-width:768px) {
-        display: flex;     
-    }
+  position: relative;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .sign-up-input {
-    @extend %input;
-    background-color: #F5F5F5;
+  @extend %input;
+  background-color: #f5f5f5;
+}
+
+.subscribe__invalid-wrap {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  align-items: center;
+  display: none;
+
+  .sign-up-input:not(:placeholder-shown):invalid + & {
+    display: flex;
+  }
+}
+
+.subscribe__invalid-message {
+  font-size: 10px;
+  color: #ff705d;
 }
 
 .sign-up-button {
-    @extend %button;
+  @extend %button;
 
-    margin-top: 20px;
-    margin-left: 175px;
-    background-color: $accent-green-color;
-    border-color: transparent;
+  margin-top: 20px;
+  margin-left: 175px;
+  background-color: $accent-green-color;
+  border-color: transparent;
 
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: $accent-modal-green-color;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-modal-green-color;
+  }
 
-    @media screen and (min-width:768px) {
-        margin-top: 0px;
-        margin-left: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
 }

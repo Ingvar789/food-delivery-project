@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    height: 72px;   
+    min-height: 72px;   
     background-color: $secondary-bg-color; 
 }
 
@@ -32,19 +32,17 @@
     display: none;
     @media screen and (min-width: 768px) {
             display: flex;
+            height: 100%;
             align-items: center;
         }
 }
 .nav {
+    margin-right: 30px;
     display: flex;
+    height: 100%;
 }
 
 .header__button {
-    display: flex;
-    margin-left: 30px;
-}
-
-.header__button-inside {
     padding: 0;
     display: flex;
     align-items: center;
@@ -61,8 +59,8 @@
     color: $main-text-color;
 }
 
-.header__button-inside:hover,
-.header__button-inside:focus {
+.header__button:hover,
+.header__button:focus {
     background: $accent-modal-green-color;
     cursor: pointer;
 }
