@@ -70,9 +70,15 @@
     padding-bottom: 0;
 }
 
+.nav-footer {
+  margin: 0;
+  @media screen and (min-width:768px) {
+    align-items: center;
+  }
+}
+
 .nav-thumb {
   display: flex;
-
   @media screen and (max-width: 1279px) {
     flex-wrap: wrap;
   }
@@ -152,7 +158,6 @@
 
 .sign-up-button-footer {
   @extend %button;
-
   background-color: #ffffff;
   border: 0.854167px solid $main-green-color;
 
