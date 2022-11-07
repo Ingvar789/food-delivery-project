@@ -21,9 +21,9 @@
   top: 50%;
   left: 50%;
   @media screen and (max-height: 449px) {
-      top: 70vh;
-      left: 50vw;
-    }
+    top: 70vh;
+    left: 50vw;
+  }
   padding: 32px 20px;
   transform: translate(-50%, -50%);
   height: 449px;
@@ -32,7 +32,7 @@
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
- 
+
 @media screen and (max-width: 767px) {
   .modal {
     width: 320px;
@@ -92,6 +92,10 @@
   padding-left: 12px;
 }
 
+.modalform__field {
+  position: relative;
+}
+
 .modalform__field:nth-child(-n + 2) {
   margin-bottom: 24px;
 }
@@ -103,28 +107,66 @@
   border: 1px solid $main-green-color;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  color: #C4C4C4;
+  color: #c4c4c4;
   line-height: 1.25;
   padding-left: 12px;
   transition: border-color 250ms $timing-function;
 
   &:focus {
     outline: none;
-    border: 1px solid #FF705D;
+    border: 1px solid #ff705d;
   }
 
-    &:not(:placeholder-shown):required:valid {
-      border: 1px solid $main-green-color;
-    }
-  
-    &:not(:placeholder-shown):required:invalid {
-      border: 1px solid #FF705D;
-    }
+  &:not(:placeholder-shown):required:valid {
+    border: 1px solid $main-green-color;
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    border: 1px solid #ff705d;
+  }
 }
+
+.modalform__invalid-wrap {
+  position: absolute;
+  top: 72px;
+  left: 12px;
+  align-items: center;
+  display: none;
+
+  .modalform__input:not(:placeholder-shown):invalid + & {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modalform__invalid-wrap {
+    align-items: baseline;
+  }
+}
+
+.modalform__invalid-icon {
+  margin-right: 4px;
+}
+
+.modalform__invalid-message {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #ff705d;
+}
+
+@media screen and (min-width: 1280px) {
+  .modalform__invalid-message {
+    font-size: 13px;
+  }
+}
+
+
 
 .modalform__btn {
   margin-top: 32px;
   align-self: center;
+  justify-self: center;
   padding: 10px 38px;
   border: 2px solid $main-green-color;
   border-radius: 30px;
@@ -140,5 +182,11 @@
   &:focus {
     background-color: $accent-green-color;
     outline: none;
+  }
+
+  .modalform:invalid > &:hover,
+  .modalform:invalid > &:focus {
+    background-color: #fff;
+    border: 2px solid #ff705d;
   }
 }
