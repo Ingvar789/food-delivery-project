@@ -1,6 +1,5 @@
 <section class="offerings" id="part-offerings">
-    <div class="container">
-        <div class="desktop-flex">
+    <div class="container desktop-flex">
         <div class="apple">
             <picture>
                 <source 
@@ -27,43 +26,48 @@
                 <img src="./images/mobile/mobile-apple@1x.png" alt="apple">
             </picture>
         </div>
-        <div class="desktop-text">
+        <div class="desctop-text">
             <!-- <div class="specialty-thumb"> -->
-                <h2 class="specialty">What’s Special About Our Offerings</h2>
-                <p class="specialty-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.   Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                <h2 class="speciality">What’s Special About Our Offerings</h2>
+                <p class="speciality-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.   Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
             <!-- </div> -->
         <ul class="usp">
             <li class="usp-item">
-                <div class="icon-bg">
-                    <svg class="icon" width="32" height="32">
-                    <use href='./images/svg/sprite.svg#icon-delivery'></use>
-                    </svg>
-                </div>
-                
-                <h3 class="usp-label">Fastest Delivery</h3>
+                <h3 class="usp-label icon-delivery">Fastest Delivery</h3>
                 <p class="usp-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                 
             </li>
             <li class="usp-item">
-                <div class="icon-bg">
-                <svg class="icon" width="32" height="32">
-                    <use href='./images/svg/sprite.svg#icon-order'></use>
-                </svg>
-                </div>
-                <h3 class="usp-label">Easy to order</h3>
+                <h3 class="usp-label icon-order">Easy to order</h3>
                 <p class="usp-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
 
             </li>
         </ul>
+        
+        <div class="offerings__box">
         <button class="order-button" type="button" data-modal-open>Order Now</button>
-        
-        
-        <a class="read-link" href="#" target="_blank">Read more
-            <svg class="read-link-icon" width="14" height="14">
-            <use href='./images/svg/sprite.svg#icon-right'></use>
-            </svg>        
-        </a>
-        </div>
+       
+        <input type="checkbox" id="read-more" hidden />
+
+        <label for="read-more" class="read-more read-link">Read 
+            <span class="more">more</span>
+            <span class="less">less</span>
+            <svg class="read-link-icon right" width="14" height="14">
+                <use href='./images/svg/sprite.svg#icon-right'></use>
+            </svg>
+            <svg class="read-link-icon left" width="14" height="14">
+                <use href='./images/svg/sprite.svg#icon-left'></use>
+            </svg>
+        </label>
+
+            
+
+            <p class="usp-description extra-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
         </div>
     </div>
 </section>
