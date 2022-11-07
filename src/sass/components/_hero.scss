@@ -4,10 +4,10 @@
   overflow: inherit;
 
     @media screen and (min-width: 768px) {
-      height: 469px;
+      min-height: 469px;
     }   
     @media screen and (min-width: 1280px) {
-      height: 608px;
+      min-height: 608px;
     }
   }
 
