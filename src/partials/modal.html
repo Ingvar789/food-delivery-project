@@ -5,11 +5,11 @@
                 <use href="./images/svg/sprite.svg#icon-menu-close"></use>
             </svg> </button>
         <p class="modalform__title">Order Form</p>
-        <form class="modalform">
+        <form class="modalform" name="orderForm" onsubmit="return validateForm()" method="post" novalidate>
             <label class="modalform__field">
                 <span class="modalform__field-desc">Name</span>
-                <input type="text" class="modalform__input" name="user-name" placeholder="Your name" required
-                    minlength="3" maxlength="25">
+                <input type="text" class="modalform__input" name="nameTextField" placeholder="Your name" required
+                    minlength="3" maxlength="25" >
                 <span class="modalform__invalid-wrap">
                     <svg class="modalform__invalid-icon" width="12" height="12">
                         <use href="./images/svg/sprite.svg#icon-invalid"></use>
@@ -25,8 +25,8 @@
             </label>
             <label class="modalform__field">
                 <span class="modalform__field-desc">Phone number</span>
-                <input type="tel" class="modalform__input" name="user-tel" placeholder="+38(0_ _) _ _ _   _ _   _ _"
-                    required pattern="^\d{3}-?\d{3}-?\d{2}-?\d{2}$">
+                <input type="tel" class="modalform__input" name="phoneNumberField" placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                    required pattern="^\d{3}-?\d{3}-?\d{2}-?\d{2}$" >
                 <span class="modalform__invalid-wrap">
                     <svg class="modalform__invalid-icon" width="12" height="12">
                         <use href="./images/svg/sprite.svg#icon-invalid"></use>
@@ -43,7 +43,7 @@
             <label class="modalform__field">
                 <span class="modalform__field-desc">E-mail</span>
                 <input type="email" class="modalform__input" name="user-email" placeholder="example@gmail.com" required
-                    pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
                 <span class="modalform__invalid-wrap">
                     <svg class="modalform__invalid-icon" width="12" height="12">
                         <use href="./images/svg/sprite.svg#icon-invalid"></use>
@@ -58,8 +58,8 @@
                 </span>
             </label>
 
-            <button type="submit" class="modalform__btn">Send
-                <svg class="modalform__reqiured-icon" width="165" height="54">
+            <button type="submit" class="modalform__btn" >Send
+                <svg class="modalform__reqiured-icon" name="emptyForm" width="165" height="54" id="fieldsEmpty">
                     <use href="./images/svg/sprite.svg#icon-required"></use>
                 </svg>
             </button>
